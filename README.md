@@ -12,7 +12,7 @@ This project analyzes electron collision data from CERN to identify patterns and
 
 ## Project Structure
 
-'''
+```
 cern-electron-analysis/
 ├── data/
 │   ├── raw/              # Unprocessed datasets
@@ -27,7 +27,7 @@ cern-electron-analysis/
 ├── .gitignore           # Tells Git which files to ignore
 ├── requirements.txt     # Python package dependencies
 └── README.md            # This file
-'''
+```
 
 ## Setup Instructions
 
