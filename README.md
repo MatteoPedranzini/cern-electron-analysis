@@ -20,6 +20,7 @@ cern-electron-analysis/
 ├── notebooks/            # Jupyter notebooks for exploration and analysis
 ├── src/
 │   ├── data/             # Data handling and preprocessing
+│   ├── utils/            # Utility modules and helper functions
 │   └── visualization/    # Visualization scripts
 ├── tests/                # Unit tests 
 ├── config/               # Configuration files   
