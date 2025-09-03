@@ -22,6 +22,10 @@ cern-electron-analysis/
 
 ├── reports/ # Contains Tableau workbook and final reports
 
+├── .gitignore # Tells Git which files to ignore 
+
+├── requirements.txt  # Python package dependencies
+
 └── README.md # This file
 
 ## Setup Instructions
