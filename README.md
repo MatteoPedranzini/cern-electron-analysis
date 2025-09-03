@@ -13,20 +13,19 @@ This project analyzes electron collision data from CERN to identify patterns and
 ## Project Structure
 
 cern-electron-analysis/
-
-├── data/ # Contains all data
-
-├── notebooks/ # Jupyter notebooks for exploration and analysis
-
-├── src/ # Source code for data processing and visualization
-
-├── reports/ # Contains Tableau workbook and final reports
-
-├── .gitignore # Tells Git which files to ignore 
-
-├── requirements.txt  # Python package dependencies
-
-└── README.md # This file
+├── data/
+│   ├── raw/              # Unprocessed datasets
+│   └── processed/        # Cleaned data
+├── notebooks/            # Jupyter notebooks for exploration and analysis
+├── src/
+│   ├── data/             # Data handling and preprocessing
+│   └── visualization/    # Visualization scripts
+├── tests/                # Unit tests 
+├── config/               # Configuration files   
+├── reports/              # Contains Tableau workbook and final reports
+├── .gitignore           # Tells Git which files to ignore
+├── requirements.txt     # Python package dependencies
+└── README.md            # This file
 
 ## Setup Instructions
 
