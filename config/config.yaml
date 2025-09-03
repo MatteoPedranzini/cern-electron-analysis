@@ -1,0 +1,60 @@
+# config/config.yaml
+# Configuration settings for CERN Electron Collision Data Analysis
+
+paths:
+  data:
+    raw: "../data/raw/dielectron.csv"
+    processed: "../data/processed/cleaned_data.csv"
+    output: "../data/processed/"
+  
+  reports:
+    tableau: "../reports/"
+    figures: "../reports/figures/"
+
+data_cleaning:
+  missing_values: "drop"  # Options: "drop", "fill", "ignore"
+  # fill_value: 0         # Uncomment if using "fill" strategy
+  columns_to_keep:
+    - "Run"
+    - "Event" 
+    - "E1"
+    - "px1"
+    - "py1"
+    - "pz1"
+    - "pt1"
+    - "eta1"
+    - "phi1"
+    - "Q1"
+    - "E2"
+    - "px2"
+    - "py2"
+    - "pz2"
+    - "pt2"
+    - "eta2"
+    - "phi2"
+    - "Q2"
+    - "M"
+
+visualization:
+  style: "seaborn-v0_8"
+  figure_size: [10, 6]
+  colors:
+    - "#1f77b4"  # blue
+    - "#ff7f0e"  # orange
+    - "#2ca02c"  # green
+    - "#d62728"  # red
+  save_figures: true
+  figure_format: "png"  # png, pdf, svg
+  dpi: 300
+
+analysis:
+  invariant_mass_bins: 40
+  energy_range: [0, 1000]  # GeV
+  correlation_threshold: 0.7
+
+# Model parameters for future regression analysis
+model:
+  test_size: 0.2
+  random_state: 42
+  # features: ["E1", "E2", "pt1", "pt2"]
+  # target: "M"

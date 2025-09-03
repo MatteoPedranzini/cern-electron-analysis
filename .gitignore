@@ -30,3 +30,9 @@ Thumbs.db
 *.hyper
 *.tds
 *.tdsx
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
