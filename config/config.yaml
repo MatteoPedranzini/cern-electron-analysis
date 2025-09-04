@@ -36,6 +36,7 @@ data_cleaning:
     - "M"
 
 visualization:
+  figures_path: 'reports/figures' 
   style: "seaborn-v0_8"
   figure_size: [10, 6]
   colors:
@@ -43,9 +44,19 @@ visualization:
     - "#ff7f0e"  # orange
     - "#2ca02c"  # green
     - "#d62728"  # red
+    - "#9467bd"  # purple
+    - "#8c564b"  # brown
+    - "#e377c2"  # pink
+    - "#7f7f7f"  # gray
   save_figures: true
   figure_format: "png"  # png, pdf, svg
   dpi: 300
+  font_size: 12
+  label_size: 12
+  title_size: 14
+  tick_size: 10
+  grid_visible: true
+  palette_name: "deep"  # seaborn palette name
 
 analysis:
   invariant_mass_bins: 40

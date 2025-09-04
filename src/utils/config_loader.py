@@ -31,6 +31,18 @@ def get_data_paths(config):
     paths = config['paths']['data']
     return paths['raw'], paths['processed'], paths['output']
 
+def get_visualization_config(config):
+    """
+    Extract visualization settings from configuration.
+    
+    Parameters:
+    config (dict): Configuration dictionary
+    
+    Returns:
+    dict: Visualization configuration
+    """
+    return config.get('visualization', {})
+
 # Example usage
 if __name__ == "__main__":
     config = load_config()
