@@ -14,21 +14,43 @@ This project analyzes electron collision data from CERN to identify patterns and
 
 ```
 cern-electron-analysis/
-├── data/
-│   ├── raw/              # Unprocessed datasets
-│   └── processed/        # Cleaned data
-├── notebooks/            # Jupyter notebooks for exploration and analysis
-├── src/
-│   ├── data/             # Data handling and preprocessing
-│   ├── utils/            # Utility modules and helper functions
-│   └── visualization/    # Visualization scripts
-├── tests/                # Unit tests 
-├── config/               # Configuration files   
-├── reports/              # Contains Tableau workbook and final reports
-├── .gitignore           # Tells Git which files to ignore
-├── requirements.txt     # Python package dependencies
-└── README.md            # This file
+├── data/                 # Data management
+│   ├── raw/              # Unprocessed datasets (original CSV files)
+│   └── processed/        # Cleaned and transformed data
+├── notebooks/            # Jupyter notebooks for analysis
+│   ├── Cern_Initial_Analysis.ipynb          # Initial exploration
+│   ├── Cern_Modular_Analysis.ipynb          # Modular approach implementation  
+│   └── Cern_Modular_Analysis-with-config.ipynb  # Config system integration
+├── src/                  # Source code
+│   ├── data/             # Data processing modules
+│   │   └── clean_data.py # Data cleaning and preparation
+│   │   └── clean_data_legacy.py # Legacy version (for reference)
+│   ├── utils/            # Utility functions
+│   │   ├── config_loader.py     # Configuration management
+│   │   ├── file_utils.py        # File I/O operations
+│   │   ├── stats_utils.py       # Statistical functions
+│   │   ├── validation_utils.py  # Data validation
+│   │   └── logger.py            # Logging configuration
+│   └── visualization/    # Visualization modules
+│       ├── plot_utils.py        # Plotting functions
+│       └── plot_utils_legacy.py # Legacy version (for reference)
+├── tests/                # Unit tests (future development)
+├── config/               # Configuration files
+│   └── config.yaml       # Project settings and parameters
+├── reports/              # Outputs and deliverables
+│   ├── figures/          # Generated plots and visualizations
+│   └── *.twb            # Tableau workbooks
+├── .gitignore           # Git ignore rules
+├── requirements.txt     # Python dependencies
+└── README.md            # Project documentation
 ```
+
+**Key Features:**
+- **Modular Design**: Separated data, utils, and visualization code
+- **Config-Driven**: Centralized configuration in config.yaml
+- **Versioned**: Source code tracked in Git, data excluded
+- **Reproducible**: requirements.txt ensures consistent environment
+- **Documented**: Multiple notebook versions show evolution
 
 ## Setup Instructions
 
